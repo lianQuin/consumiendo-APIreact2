@@ -11,6 +11,8 @@ async function consultarPost() {
         const resPost = await axios.get(`https://jsonplaceholder.typicode.com/posts/${postId}`);
         const postData = resPost.data;
 
+        
+
         const userId = postData.userId;
         const resUser = await axios.get(`https://jsonplaceholder.typicode.com/users/${userId}`);
         const userData = resUser.data;
